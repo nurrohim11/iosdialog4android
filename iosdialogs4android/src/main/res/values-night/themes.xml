@@ -1,5 +1,4 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
     </style>
@@ -21,6 +20,15 @@
         <item name="cardPreventCornerOverlap">false</item>
         <item name="cardUseCompatPadding">true</item>
         <item name="contentPadding">0dp</item>
+        <item name="cardBackgroundColor">@color/black</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SeparatorStyle">
+        <item name="android:background">@color/separator_ios_dialog_night</item>
     </style>
 
 </resources>

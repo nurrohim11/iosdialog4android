@@ -24,8 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="48dp"
             android:clickable="true"
-            android:orientation="vertical"
-            app:cardBackgroundColor="@android:color/white">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -57,7 +56,7 @@
                         android:shadowDx="1"
                         android:shadowDy="1"
                         android:shadowRadius="1"
-                        android:textColor="@color/title_ios_dialog"
+                        style="@style/TextViewStyle"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         tools:text="Ios Dialog Title" />
@@ -83,7 +82,7 @@
                             android:shadowDx="1"
                             android:shadowDy="1"
                             android:shadowRadius="1"
-                            android:textColor="@color/title_ios_dialog"
+                            style="@style/TextViewStyle"
                             android:textSize="14sp"
                             tools:text="Ios Dialog message detail info" />
                     </ScrollView>
@@ -104,7 +103,7 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:background="@color/separator_ios_dialog" />
+                            style="@style/SeparatorStyle"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -142,7 +141,7 @@
                             <View
                                 android:layout_width="1dp"
                                 android:layout_height="match_parent"
-                                android:background="@color/separator_ios_dialog" />
+                                style="@style/SeparatorStyle" />
 
                             <LinearLayout
                                 android:id="@+id/layoutPositive"

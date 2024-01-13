@@ -4,6 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="white">#FFF</color>
+    <color name="dark">#121212</color>
+    <color name="black">#000</color>
+
     <color name="text_shadow">#1A000000</color>
     <color name="layer_ios_dialog">#80000000</color>
 
@@ -13,7 +17,8 @@
     <color name="action_button_ios_dialog">#1981fb</color>
     <color name="action_button_negative_ios_dialog">#FA3826</color>
 
-    <color name="separator_ios_dialog">#1A000000</color>
+    <color name="separator_ios_dialog_light">#1A000000</color>
+    <color name="separator_ios_dialog_night">#A6EFEFEF</color>
     <color name="highlight_ios_dialog">#0F000000</color>
 
 </resources>

@@ -116,7 +116,7 @@ public class IOSDialogView extends AppCompatActivity implements View.OnClickList
 
                     LinearLayout separator = new LinearLayout(context);
                     separator.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, Math.round(1 * dp)));
-                    separator.setBackgroundColor(ContextCompat.getColor(context, R.color.separator_ios_dialog));
+//                    separator.setBackgroundColor(ContextCompat.getColor(context, R.color.separator_ios_dialog));
 
                     layoutMultipleOptions.addView(separator);
 
