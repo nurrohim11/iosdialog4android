@@ -1,4 +1,4 @@
-package com.varunjohn1990.iosdialogs4android;
+package com.findopenit.iosdialogmodule;
 
 import android.animation.Animator;
 import android.content.Context;

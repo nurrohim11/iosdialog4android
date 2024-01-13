@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.varunjohn1990.iosdialogs4android">
+    package="com.findopenit.iosdialogmodule">
 
     <application>
         <activity
-            android:name=".IOSDialogView"
+            android:name="com.findopenit.iosdialogmodule.IOSDialogView"
             android:launchMode="singleTop"
             android:theme="@style/AppThemeIosDialog"></activity>
     </application>

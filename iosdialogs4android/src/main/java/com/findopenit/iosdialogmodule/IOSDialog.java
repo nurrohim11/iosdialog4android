@@ -1,4 +1,4 @@
-package com.varunjohn1990.iosdialogs4android;
+package com.findopenit.iosdialogmodule;
 
 import android.content.Context;
 import android.view.View;

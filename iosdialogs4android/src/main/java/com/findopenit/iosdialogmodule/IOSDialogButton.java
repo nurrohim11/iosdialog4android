@@ -1,6 +1,4 @@
-package com.varunjohn1990.iosdialogs4android;
-
-import android.graphics.Color;
+package com.findopenit.iosdialogmodule;
 
 import java.io.Serializable;
 

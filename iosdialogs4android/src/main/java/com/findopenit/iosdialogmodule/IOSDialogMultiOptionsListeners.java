@@ -1,4 +1,4 @@
-package com.varunjohn1990.iosdialogs4android;
+package com.findopenit.iosdialogmodule;
 
 /**
  * Created by Varun John on Feb 2020.

@@ -4,20 +4,20 @@ ext {
     bintrayRepo = 'Maven'
     bintrayName = 'iosdialogs4android'
 
-    publishedGroupId = 'com.varunjohn1990.libraries'
-    libraryName = 'iosdialogs4android'
-    artifact = 'iosdialogs4android'
+    publishedGroupId = 'com.findopenit.libraries'
+    libraryName = 'iosdialog4android'
+    artifact = 'iosdialog4android'
 
-    libraryDescription = 'Its a library to show iOS like AlertView in Android as Dialogs. Check demo here https://github.com/varunjohn/iOSDialogs4Android'
+    libraryDescription = 'Its a library to show iOS like AlertView in Android as Dialogs.'
 
     siteUrl = 'https://github.com/varunjohn/iOSDialogs4Android'
     gitUrl = 'https://github.com/varunjohn/iOSDialogs4Android.git'
 
     libraryVersion = '2.0.0'
 
-    developerId = 'varunjohn1990'
-    developerName = 'Varun John'
-    developerEmail = 'varunjohn1990@gmail.com'
+    developerId = 'therohim'
+    developerName = 'Rohim'
+    developerEmail = 'therohim@gmail.com'
 
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
@@ -26,12 +26,12 @@ ext {
 
 android {
 
-    compileSdkVersion 29
-    buildToolsVersion = '29.0.2'
+    compileSdkVersion 34
+    buildToolsVersion = '34.0.0'
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 29
+        targetSdkVersion 34
     }
 
     buildTypes {

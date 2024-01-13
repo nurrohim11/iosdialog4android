@@ -1,4 +1,4 @@
-package com.varunjohn1990.dialog_ios;
+package com.findopenit.iosdialog;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -7,13 +7,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.varunjohn1990.iosdialogs4android.IOSDialog;
-import com.varunjohn1990.iosdialogs4android.IOSDialogButton;
-import com.varunjohn1990.iosdialogs4android.IOSDialogMultiOptionsListeners;
+import com.findopenit.iosdialogmodule.IOSDialog;
+import com.findopenit.iosdialogmodule.IOSDialogButton;
+import com.findopenit.iosdialogmodule.IOSDialogMultiOptionsListeners;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class DemoActivity extends AppCompatActivity {
 
