@@ -18,7 +18,7 @@
     <color name="action_button_negative_ios_dialog">#FA3826</color>
 
     <color name="separator_ios_dialog_light">#1A000000</color>
-    <color name="separator_ios_dialog_night">#A6EFEFEF</color>
+    <color name="separator_ios_dialog_night">#57EFEFEF</color>
     <color name="highlight_ios_dialog">#0F000000</color>
 
 </resources>
