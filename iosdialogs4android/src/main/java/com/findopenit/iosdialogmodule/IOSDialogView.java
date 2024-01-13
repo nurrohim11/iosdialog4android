@@ -33,6 +33,7 @@ public class IOSDialogView extends AppCompatActivity implements View.OnClickList
     private View layoutDialog;
     private View layoutContent;
     private View layoutNegative;
+    private View layoutPositive;
 
     private TextView textViewTitle, textViewMessage, textViewNegative, textViewPositive;
 
@@ -53,6 +54,7 @@ public class IOSDialogView extends AppCompatActivity implements View.OnClickList
         layoutDialog = findViewById(R.id.layoutDialog);
         layoutContent = findViewById(R.id.layoutContent);
         layoutNegative = findViewById(R.id.layoutNegative);
+        layoutPositive = findViewById(R.id.layoutPositive);
 
         textViewTitle = findViewById(R.id.textViewTitle);
         textViewMessage = findViewById(R.id.textViewMessage);
@@ -82,6 +84,11 @@ public class IOSDialogView extends AppCompatActivity implements View.OnClickList
             textViewMessage.setText(iosDialog.getMessage());
         } else {
             textViewMessage.setText("");
+        }
+
+        if (!iosDialog.isMultiOptions() || (iosDialog.getPositiveClickListener() == null && iosDialog.getNegativeClickListener() == null)) {
+            layoutNegative.setVisibility(View.GONE);
+            layoutPositive.setVisibility(View.VISIBLE);
         }
 
         if (!iosDialog.isMultiOptions()) {
@@ -206,6 +213,13 @@ public class IOSDialogView extends AppCompatActivity implements View.OnClickList
         if (id == R.id.textViewPositive) {
             if (iosDialog.getPositiveClickListener() != null) {
                 iosDialog.getPositiveClickListener().onClick(iosDialog);
+            } else {
+                dismiss();
+            }
+
+            if (iosDialog.getSingleClickListener() != null ){
+                iosDialog.getSingleClickListener().onClick(iosDialog);
+                dismiss();
             } else {
                 dismiss();
             }

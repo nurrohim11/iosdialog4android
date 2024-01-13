@@ -19,9 +19,11 @@ public class IOSDialog {
     private String title;
     private String message;
     private String positiveButtonText;
+    private String singleButtonText;
     private String negativeButtonText;
     private IOSDialogMultiOptionsListeners iosDialogMultiOptionsListeners;
     private Listener positiveClickListener;
+    private Listener singleClickListener;
     private Listener negativeClickListener;
     private Listener cancelListener;
     private boolean enableAnimation = true;
@@ -63,6 +65,14 @@ public class IOSDialog {
 
     public IOSDialogMultiOptionsListeners getIosDialogMultiOptionsListeners() {
         return iosDialogMultiOptionsListeners;
+    }
+
+    public String getSingleButtonText() {
+        return singleButtonText;
+    }
+
+    public Listener getSingleClickListener() {
+        return singleClickListener;
     }
 
     public String getPositiveButtonText() {
@@ -135,6 +145,11 @@ public class IOSDialog {
             return this;
         }
 
+        public Builder singleButtonText(String singleButtonText) {
+            iosDialog.singleButtonText = singleButtonText;
+            return this;
+        }
+
         public Builder positiveButtonText(String positiveButtonText) {
             iosDialog.positiveButtonText = positiveButtonText;
             return this;
@@ -145,6 +160,11 @@ public class IOSDialog {
             return this;
         }
 
+        public Builder singleButtonText(int singleButtonTextResourceId) {
+            iosDialog.singleButtonText = context.getString(singleButtonTextResourceId);
+            return this;
+        }
+
         public Builder positiveButtonText(int positiveButtonTextResourceId) {
             iosDialog.positiveButtonText = context.getString(positiveButtonTextResourceId);
             return this;
@@ -152,6 +172,11 @@ public class IOSDialog {
 
         public Builder negativeButtonText(int negativeButtonTextResourceId) {
             iosDialog.negativeButtonText = context.getString(negativeButtonTextResourceId);
+            return this;
+        }
+
+        public Builder singleClickListener(Listener singleClickListener) {
+            iosDialog.singleClickListener = singleClickListener;
             return this;
         }
 

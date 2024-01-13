@@ -71,6 +71,22 @@ public class DemoActivity extends AppCompatActivity {
                 .show();
     }
 
+    public void type5(View view) {
+        new IOSDialog.Builder(context)
+                .title("Android OS")
+                .message(R.string.description)
+                .cancelable(false)
+                .singleButtonText("Oke")
+                .singleClickListener(new IOSDialog.Listener() {
+                    @Override
+                    public void onClick(IOSDialog iosDialog) {
+                        Toast.makeText(context, "Single click listener success", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .build()
+                .show();
+    }
+
     public void type3(View view) {
         new IOSDialog.Builder(context)
                 .title("iOS Dialogs")              // String or String Resource ID
