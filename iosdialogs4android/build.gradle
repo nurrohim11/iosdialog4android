@@ -10,8 +10,8 @@ ext {
 
     libraryDescription = 'Its a library to show iOS like AlertView in Android as Dialogs.'
 
-    siteUrl = 'https://github.com/varunjohn/iOSDialogs4Android'
-    gitUrl = 'https://github.com/varunjohn/iOSDialogs4Android.git'
+    siteUrl = 'https://github.com/therohim/iosdialog4android'
+    gitUrl = 'https://github.com/therohim/iosdialog4android.git'
 
     libraryVersion = '2.0.0'
 
